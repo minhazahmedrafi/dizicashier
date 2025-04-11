@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Hind Siliguri", sans-serif;
+}
+.container {
+  padding: 0 40px;
+}
+.banner {
+  background-image: linear-gradient(360deg, rgba(0, 118, 192, 0.15), #fff);
+}
+.logos {
+  animation: scroll 40s linear infinite;
+  width: calc(250px * 14);
+  padding: 20px 0;
+}
+.logos img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.swiper-slide {
+  opacity: 0.4;
+  transform: scale(0.9);
+  transition: all 0.4s ease-in-out;
+}
+
+.swiper-slide-active {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 10;
+}
+
+.swiper-slide-next,
+.swiper-slide-prev {
+  opacity: 0.7;
+}
+
+.testimonial {
+  position: relative;
+  height: 100vh;
+}
+.swiper-pagination {
+  position: absolute !important;
+  left: 0 !important;
+  bottom: 100px !important;
+}
+.swiper-pagination-bullet {
+  height: 12px;
+  width: 12px;
+}
+.swiper-slide-next,
+.swiper-slide-prev {
+  opacity: 0.2;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-200px * 7));
+  }
+}
